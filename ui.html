@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nexcore</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+    @font-face{
+      font-family: 'DINPro Regular';
+      src: url('./fonts/DINPro.woff') format('woff');
+    }
+    @font-face{
+      font-family: 'DINPro Light';
+      src: url('./fonts/DINPro-Light.woff') format('woff');
+    }
+    body{
+      background: url('./img/textura.png')center repeat-x;
+      background-size: auto 100%;
+      height: 100vh;
+      width: 100vw;
+      font-family: 'DINPro Regular';
+    }
+    .spacer{
+      height: 15vh;
+    }
+    .icon-box .icon {
+      height: 69px;
+      width: 69px;
+      border-radius: 1em;
+      background-color: #d3d3d3;
+      color: #212121;
+      padding: 9.5px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .title {
+      text-align: center;
+      font-size: 21px;
+    }
+    .icon-box .title {
+      text-align: center;
+      font-family: 'DINPro light';
+      font-size: 20px;
+    }
+    .icon-box .icon-container {
+      position: relative;
+      height: 69px;
+    }
+    .icon-box .icon span {
+          font-size: 50px;
+    }
+    .footer{
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      font-size: 0.8em;
+      width: 100vw;
+      left: 0;
+      margin: 0;
+      line-height: 3em;
+      font-weight: bold;
+    }
+    .footer .logo {
+      max-width: 30%;
+      height: auto;
+      margin: 1em 0;
+    }
+    .bg-dark{
+      background-color: #111;
+      color: #FFF;
+    }
+    @media(min-width: 992px){
+      .spacer{
+        height: 25vh;
+      }
+      .title{
+        text-align: right;
+      }
+      .icon-box {
+        padding-left: 92px;
+        margin-top: 21px;
+      }
+      .icon-box .icon {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+      }
+      .icon-box .title {
+        margin-top: 18px;
+        text-align: left;
+      }
+      .footer .logo {
+        max-width: 15%;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- main container -->
+      <div class="row main">
+        <!-- spacer -->
+        <div class="spacer">
+        </div>
+        <!-- top (xs) - left (md) side container -->
+        <div class="col-xs-12 col-md-6">
+          <!-- logo container -->
+          <div class="row logo">
+            <!-- logo sub-container (is full on xs and half in md) -->
+            <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-6">
+              <img src="./img/Logo_Ncall.png" class="img-responsive">
+            </div>
+          </div>
+          <!-- title container -->
+          <div class="row title">
+            <!-- title container (is full on xs and third on md) -->
+            <div class="col-xs-12 col-md-5 col-md-offset-7">
+              <p>Para começar clique em seu tipo de usuário</p>
+            </div>
+          </div>
+        </div>
+        <!-- bottom (xs) - right (md) side container -->
+        <div class="col-xs-12 col-md-6">
+          <!-- buttons container -->
+          <div class="row">
+            <!-- single button container -->
+            <div class="col-xs-6 col-md-12 icon-box">
+              <!-- container for icon and title -->
+              <div class="row">
+                <!-- icon container (full on xs and half on md)-->
+                <div class="col-xs-12 col-md-2 icon-container">
+                  <div class="icon">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                  </div>
+                </div>
+                <!-- title container (full on xs and half on md)-->
+                <div class="col-xs-12 col-md-10">
+                  <p class="title">Administrador</p>
+                </div>
+              </div>
+            </div>
+            <!-- single button container -->
+            <div class="col-xs-6 col-md-12 icon-box">
+              <!-- container for icon and title -->
+              <div class="row">
+                <!-- icon container (full on xs and half on md)-->
+                <div class="col-xs-12 col-md-2 icon-container">
+                  <div class="icon">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                  </div>
+                </div>
+                <!-- title container (full on xs and half on md)-->
+                <div class="col-xs-12 col-md-10">
+                  <p class="title">Agente / Supervisor</p>
+                </div>
+              </div>
+            </div>
+            <!-- single button container -->
+            <div class="col-xs-6 col-md-12 icon-box">
+              <!-- container for icon and title -->
+              <div class="row">
+                <!-- icon container (full on xs and half on md)-->
+                <div class="col-xs-12 col-md-2 icon-container">
+                  <div class="icon">
+                    <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
+                  </div>
+                </div>
+                <!-- title container (full on xs and half on md)-->
+                <div class="col-xs-12 col-md-10">
+                  <p class="title">Telefonista</p>
+                </div>
+              </div>
+            </div>
+            <!-- single button container -->
+            <div class="col-xs-6 col-md-12 icon-box">
+              <!-- container for icon and title -->
+              <div class="row">
+                <!-- icon container (full on xs and half on md)-->
+                <div class="col-xs-12 col-md-2 icon-container">
+                  <div class="icon">
+                    <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+                  </div>
+                </div>
+                <!-- title container (full on xs and half on md)-->
+                <div class="col-xs-12 col-md-10">
+                  <p class="title">Suporte</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- end of main container -->
+      <div class="row footer">
+        <div class="col-xs-12">
+          <img src="./img/Logo_Nexcore.png" class="logo">
+        </div>
+        <div class="col-xs-12 bg-dark">
+          Nexcore Tecnologia - Todos os direitos reservados. www.nexcore.com.br | 41 3322.1336
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
